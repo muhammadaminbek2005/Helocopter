@@ -1,13 +1,17 @@
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 767px) {
   html {
-    font-size: 2vw;
+    font-size: 1.5vw;
   }
-
-  .menu {
-    top: 20rem;
-    height: 100%;
-  }
-
+  .header-box {
+  min-height: 400px;
+}
+.header-box__link{
+  margin: 0;
+}
+.header-box__title{
+  font-size: 30px;
+  line-height: 30px;
+}
   .navbar {
     height: 20vh;
   }
@@ -25,8 +29,17 @@
     flex-direction: column;
   }
 
+  .counters {
+    flex-direction: column;
+  }
+
   .mainbox__img img {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 320px;
   }
 
   .resultbox__article {
@@ -37,42 +50,47 @@
     flex-direction: column;
   }
 
-  .news__item {
-    width: 100%;
+  .news__item{
     margin: 1rem auto;
   }
-
   .news__link svg {
     margin: 0 0 0 1rem;
   }
 
-  .partners__items {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .partners__item {
-    width: 100%;
-    margin: 1rem auto;
-  }
 
   .footer__box {
-    height: 50vh;
+    flex-direction: column;
+  }
+
+  .footer__logo {
+    flex: 0 1 100px;
+  }
+
+  .footer__contact {
+    justify-content: center;
+  }
+
+  .footer__contact-link img {
+    width: 35px;
   }
 }
 
-@media screen and (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-
+@media screen and (max-width: 425px) {
   html {
-    font-size: 1.5vw;
+    font-size: 2vw;
+  }
+  .footer__logo {
+    display: flex;
+    align-items: center;
+
   }
 
-  .header-box {
-    justify-content: space-evenly;
+  .footer__logo img {
+    width: 100px;
+    align-items: center;
+
+
   }
 }
 
@@ -81,9 +99,9 @@
     max-width: 720px;
   }
 
-  .resultbox__article {
+  /* .resultbox__article {
     height: 20vh;
-  }
+  } */
 
   html {
     font-size: 1vw;
@@ -96,7 +114,7 @@
   }
 
   html {
-    font-size: 1.2vw;
+    font-size: 1vw;
   }
 
 }
@@ -123,7 +141,7 @@
 
 @media screen and (min-width: 1920px) {
   .container {
-    max-width: 1400px;
+    max-width: 1800px;
   }
 
   html {

@@ -15,7 +15,7 @@ $(document).ready(function () {
     responsive: {
       0: {
         items: 1,
-        nav: true,
+        nav: false,
       },
       360: {
         items: 1,
@@ -36,7 +36,7 @@ $(document).ready(function () {
   var partnerSlider = $("#partners");
   partnerSlider.owlCarousel({
     loop: true,
-    center: true,
+    center:false,
     nav: false,
     dots: false,
     animateOut: 'fadeOut',
@@ -54,7 +54,7 @@ $(document).ready(function () {
       360: {
         items: 1,
         nav: false,
-        margin: 10,
+        center:true,
       },
       768: {
         items: 2,
