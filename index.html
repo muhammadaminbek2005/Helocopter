@@ -18,7 +18,7 @@
 </head>
 
 <body>
-   <header class="header">
+   <header class="header" id="header">
 
       <div class="menu-box ">
          <nav class="navbar">
@@ -55,12 +55,15 @@
             <div class="header__burger"><span></span></div>
             <nav class="menu">
                <ul class="menu__list">
-                  <li><a href="#2" class="menu__link">Cферы применение</a></li>
-                  <li><a href="#3" class="menu__link">Новости</a>
+                  <li><a href="#header" class="menu__link">Cферы применение</a></li>
+
+                  <li><a href="#1" class="menu__link">О копании</a>
+                  </li>
+                  <li><a href="#2" class="menu__link">Новости</a>
+                  </li>
+                  <li><a href="#3" class="menu__link">Партнеры</a>
                   </li>
                   <li><a href="#4" class="menu__link">Контакты</a>
-                  </li>
-                  <li><a href="#1" class="menu__link">О копании</a>
                   </li>
                   <li>
                      <a href="http://" class="menu__lang">EN</a>
@@ -73,21 +76,27 @@
       </div>
       <div class="owl-carousel owl-theme" id="headerSlider">
          <div class="header-box ">
-            <video src="./img/videoss.mp4" autoplay muted loop></video>
+            <div class="header-box__img">
+               <video src="./img/videoss.mp4" autoplay muted loop></video>
+            </div>
             <div class="header-box__link container">
                <h1 class="header-box__title ">Градостроительство</h1>
                <a href="#2" class="header-box__button">Подробно</a>
             </div>
          </div>
          <div class="header-box ">
-            <img src="./img/Header.jpg" alt="">
+            <div class="header-box__img">
+               <img src="./img/Header.jpg" alt="">
+            </div>
             <div class="header-box__link container">
                <h1 class="header-box__title ">Беспилотные летательны <br> аппараты</h1>
                <a href="#2" class="header-box__button">Подробно</a>
             </div>
          </div>
          <div class="header-box ">
-            <img src="./img/3.jpeg" alt="">
+            <div class="header-box__img">
+               <img src="./img/3.jpeg" alt="">
+            </div>
             <div class="header-box__link container">
                <h1 class="header-box__title ">Горнодобывающая промышленность</h1>
                <a href="#2" class="header-box__button">Подробно</a>
@@ -136,7 +145,7 @@
          </div>
          <!-- end container -->
       </section>
-      <section id="3" class="news container">
+      <section id="2" class="news container">
          <h2 class="mainbox__header ">Новости</h2>
          <div class="line"></div>
          <article class="news__items">
@@ -190,7 +199,7 @@
             </div>
          </article>
       </section>
-      <section id="4" class="partners container">
+      <section id="3" class="partners container">
          <h2 class="mainbox__header">Партнеры</h2>
          <div class="line"></div>
          <div class="partners__items owl-carousel" id="partners">
@@ -199,7 +208,7 @@
                   <img src="./img/it-park1.png" alt="">
                </a>
             </div>
-            <div class="partners__item " >
+            <div class="partners__item ">
                <a target="_blank" rel="noopener noreferrer" href="https://www.hcuav.com">
                   <img src="./img/it-park2.png" alt="">
                </a>
@@ -217,7 +226,7 @@
          </div>
       </section>
    </main>
-   <footer class="footer">
+   <footer id="4" class="footer">
       <div class="partners__bg"></div>
       <div class="footer__box container">
          <nav class="footer__navbar">
